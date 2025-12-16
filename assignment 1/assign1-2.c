@@ -4,11 +4,9 @@ unsigned int size = 1;
 char mask = 0x80;
 
 void print_bin(void *vp , unsigned int size)
-{
-    for(int i=size-1;i>=0;i--)
+{ int i;
+    for(i=size-1;i>=0;i--)
     {
-
-
     unsigned mask = 0x80;
     while(mask){
         if(mask &  *((char*)vp+i)){
@@ -24,7 +22,7 @@ void print_bin(void *vp , unsigned int size)
     printf("\n");
 }
 
-void main(){
+void main(void){
     char ch =10;
     print_bin(&ch,sizeof(ch));
     unsigned int c =0xFF;
