@@ -2,7 +2,7 @@
  * lcd.c
  *
  *  Created on: Dec 30, 2025
- *      Author: RITESH
+ *      Author: MANTHAN
  */
 /* LCD header file (contains macros & prototypes) */
 #include "lcd.h"
